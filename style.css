@@ -1,0 +1,134 @@
+/* الخطوط الأساسية */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  direction: rtl;
+  text-align: right;
+}
+
+/* استخدام خط Amiri للعناوين */
+h1, h2, h3 {
+  font-family: 'Amiri', serif;
+  color: #022c43;
+}
+
+/* إعدادات الحاوية المركزية */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ترويسة الموقع */
+.site-header {
+  background-color: #2196F3; /* أزرق */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* قائمة التنقل الرئيسية */
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+.main-nav a:hover {
+  color: #ffe0b2; /* مثال لون برتقالي فاتح عند المرور */
+}
+
+/* أقسام المحتوى */
+section {
+  margin: 40px 0;
+}
+
+/* بنية قائمة الدروس */
+.lesson-list {
+  list-style-type: none;
+  padding: 0;
+}
+.lesson-list li {
+  margin-bottom: 10px;
+}
+.lesson-list a {
+  color: #2196F3;
+  text-decoration: none;
+}
+.lesson-list a:hover {
+  text-decoration: underline;
+}
+
+/* تنسيق الأزرار */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF9800; /* برتقالي */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: #e68900;
+}
+
+/* تنسيق نموذج التمارين والاتصال */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin: 10px 0 5px;
+}
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4CAF50; /* أخضر */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+form button:hover {
+  background-color: #388E3C;
+}
+
+/* شبكة الفيديوهات */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.video-item h3 {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* الإعلامات */
+#quizResult p {
+  background-color: #fff9c4;
+  padding: 10px;
+  border: 1px solid #f0c14b;
+  border-radius: 4px;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 600px) {
+  .main-nav a {
+    display: block;
+    margin: 8px 0;
+  }
+  header .site-header {
+    padding: 20px 10px;
+  }
+}

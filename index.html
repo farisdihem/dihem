@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الموقع الرسمي لأستاذ الرياضيات</title>
+  <!-- خطوط جوجل: Cairo وAmiri -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Amiri&display=swap" rel="stylesheet">
+  <!-- ملف CSS الرئيسي -->
+  <link rel="stylesheet" href="style.css">
+  <!-- مكتبة AOS للانميشن -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body dir="rtl">
+
+  <!-- الهيدر: عنوان الموقع -->
+  <header class="site-header" data-aos="fade-down">
+    <h1>أ/ أحمد علي - أستاذ الرياضيات</h1>
+    <p>تعلم الرياضيات بطريقة سهلة وممتعة</p>
+    <!-- قائمة التنقل -->
+    <nav class="main-nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="lessons.html">الدروس</a>
+      <a href="exercises.html">التمارين</a>
+      <a href="videos.html">الفيديوهات</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <!-- قسم "عن الأستاذ" -->
+  <main class="container">
+    <section id="about" data-aos="fade-up">
+      <h2>عن الأستاذ</h2>
+      <p>ديهم عبد اللطيف  هو أستاذ رياضيات بخبرة تزيد عن 10 سنوات في تدريس جميع مستويات الرياضيات من المرحلة المتوسطة  . حاصل على درجة الليسنس في الرياضيات من جامعةمحمد خيضر بسكة  (). يسعى لتوضيح المفاهيم الرياضية بطريقة مبسطة وتشجيع الطلاب على حب الرياضيات.</p>
+    </section>
+
+    <!-- قسم الروابط السريعة (أقسام الموقع) -->
+    <section id="features" data-aos="fade-up">
+      <h2>أقسام الموقع</h2>
+      <div class="features">
+        <div class="feature-item" data-aos="zoom-in">
+          <h3>الدروس</h3>
+          <p>دروس مرتبة حسب المستوى التعليمي وحسب الموضوع.</p>
+          <a href="lessons.html" class="btn">عرض الدروس</a>
+        </div>
+        <div class="feature-item" data-aos="zoom-in" data-aos-delay="100">
+          <h3>التمارين</h3>
+          <p>تمارين تفاعلية واختبارات قصيرة لتعزيز الفهم.</p>
+          <a href="exercises.html" class="btn">حل التمارين</a>
+        </div>
+        <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
+          <h3>الفيديوهات</h3>
+          <p>مقاطع تعليمية مفيدة في مواضيع مختلفة من الرياضيات.</p>
+          <a href="videos.html" class="btn">مشاهدة الفيديو</a>
+        </div>
+        <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
+          <h3>تواصل معنا</h3>
+          <p>لأي استفسار أو اقتراح، يمكنك مراسلتنا عبر نموذج التواصل.</p>
+          <a href="contact.html" class="btn">أرسل رسالة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- تضمين مكتبة AOS والسكريبت الأساسي -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
